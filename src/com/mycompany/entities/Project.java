@@ -5,6 +5,11 @@ import com.mycompany.ifc.ProjectIfc;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Representa un proyecto que tiene varias tareas
+ * @author edwin_rivas
+ * @version 1.0
+ */
 public class Project implements ProjectIfc {
 
     private String name;
@@ -32,7 +37,7 @@ public class Project implements ProjectIfc {
 
     @Override
     public void showTasks() {
-        System.out.println("Tasks in project '" + name + "':");
+        System.out.println("TAREAS EN PROYECTO '" + name + "':");
         for (Task task : tasks) {
             System.out.println(task);
         }

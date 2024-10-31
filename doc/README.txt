@@ -1,3 +1,5 @@
+Repositorio del proyecto: https://github.com/meo2083/SOLID.git
+
 Estructura del Sistema
 
     Clases:
@@ -30,3 +32,7 @@ Explicación de la Implementación
 
     Dependency Inversion Principle (DIP):
         Las clases dependen de interfaces en lugar de implementaciones concretas. Esto facilita la inyección de dependencias y mejora la testabilidad.
+
+Instrucciones para ejecutar aplicación:
+
+    Clic derecho sobre clase TaskApp que se encuentra en paquete com.mycompany.app y luego seleccionar Run TaskApp.main()

@@ -2,6 +2,11 @@ package com.mycompany.entities;
 
 import com.mycompany.ifc.TaskIfc;
 
+/**
+ * Representa una tarea
+ * @author edwin_rivas
+ * @version 1.0
+ */
 public class Task implements TaskIfc {
 
     private String description;
@@ -30,12 +35,12 @@ public class Task implements TaskIfc {
 
     @Override
     public String getStatus() {
-        return completed ? "Completed" : "In Progress";
+        return completed ? "COMPLETADA" : "EN PROGRESO";
     }
 
     @Override
     public String toString() {
-        return "Task: " + description + ", Assigned to: " + (assignedUser != null ? assignedUser.getName() : "None") + ", Status: " + getStatus();
+        return "TAREA: " + description + ", ASIGNADA A: " + (assignedUser != null ? assignedUser.getName() : "SIN USUARIO") + ", ESTADO: " + getStatus();
     }
 
 }
